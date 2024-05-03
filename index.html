@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Sections</title>
+</head>
+<body>
+     
+    <section class="container">
+        <div class="white-box">
+            <div class="items">
+                <div class="text-container">
+                    <h1>Investir em bem-estar nunca valeu tanto a pena</h1>
+                    <p>Empresas mais saudáveis com resultados comprovados.</p>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <span class="mdi mdi-arm-flex-outline"></span>
+                        <h3>178%</h3>
+                        <p>de aumento em colaboradores ativos fisicamente <span>[1]</span></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <span class="mdi mdi-thumb-up-outline"></span>
+                        <h3>25%</h3>
+                        <p>de redução nos custos anuais com plano de saúde <span>[2]</span></p>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <span class="mdi mdi-heart-outline"></span>
+                        <h3>43%</h3>
+                        <p>de melhoria na retenção de talentos <span>[3]</span></p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button>Solicitar orçamento</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+
+
+        body {
+            font-family: "Rubik", sans-serif;
+        }
+
+
+        .box span {
+            font-weight: 900;
+            color: #D8385E;
+        }
+        
+        .mdi{
+            color: #D8385E;
+            font-size: 40px;
+        }
+
+
+        .container {
+            width: 100%;
+            height: 615.98px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .items {
+            display: grid;
+            grid-gap: 24px;
+            grid-template-columns: repeat(3,1fr); 
+        }
+
+        .white-box {
+            display: flex;
+            width: 1272px;
+            height: 455.98px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .item { 
+            padding: 24px;
+            width: 22.5rem;
+            font-size: 1.5em; 
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+
+        .button-container, .text-container{
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        .button-container button  {
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 15px 24px;
+            border-radius: 99px;
+            background-color: #D8385E;
+        }
+
+        .text-container h1, .box h3 {
+            font-family: "Inter", sans-serif;
+        }
+
+        .text-container h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .text-container p {
+            color: #6B6B78;
+            font-size: 20px;
+            margin-top: 12px;
+        }
+
+        .box p {
+            font-size: 20px;
+        }
+    </style>
+</body>
+</html>/
