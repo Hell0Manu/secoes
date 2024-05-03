@@ -8,6 +8,7 @@
     <title>Sections</title>
 </head>
 <body>
+    <!--Section 1 -->
     <section class='container_secoes'>
         <div class='white-box'>
             <div class='items'>
@@ -45,6 +46,7 @@
     </section>
 
     <style>
+        /*Section 1*/
         body {
             font-family: "Rubik", sans-serif;
         }
@@ -62,7 +64,7 @@
         .container_secoes {
             width: 100%;
             height: 615.98px;
-            display: grid;
+            display: flex;
             align-items: center;
             justify-content: center;
         }
@@ -143,5 +145,166 @@
             }
         }
     </style>
+
+     <!--Section 2 -->
+     <section class="container_section2">
+        <div class="white-box-section2">
+            <div class='text-container_section2'>
+                <h2>Enrich your plan with more features</h2>
+            </div>
+            <div class="items-section2">
+                <div class='item-section2'>
+                    <div class='box-section2'>
+                        <img src="img/Leadbooster.svg.png">
+                    </div>
+                    <div class="conteudo_itens_section2">
+                        <span class="badge_section2">LEADBOOSTER</span>
+                        <h3>Capture more leads</h3>
+
+                        <p>Get more leads with this powerful
+                            and easy-to-use lead generation
+                            tool set.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div> 
+                </div>
+                <div class='item-section2'>
+                    <div class='box-section2'>
+                        <img src="img/Web-visitors.svg.png">
+                    </div>
+                    <div class="conteudo_itens_section2">
+                        <span class="badge_section2">WEB VISITORS</span>
+                        <h3>See who’s browsing your site</h3>
+
+                        <p>Identify which organizations are
+                            browsing your website, for how
+                            long, how they found you and what
+                            they engaged with.
+                        </p>
+
+                        <a href="#">Learn more</a>
+                    </div> 
+                </div>
+                <div class='item-section2'>
+                    <div class='box-section2'>
+                        <img src="img/Smartdocs.svg.png">
+                    </div>
+                    <div class="conteudo_itens_section2">
+                        <span class="badge_section2">SMART DOCS</span>
+                        <h3>Manage all your documents in one
+                            place</h3>
+
+                        <p>Centralize the entire documentation
+                            process by sending trackable
+                            quotes, proposals and contracts
+                            from within Pipedrive.
+                        </p>
+
+                        <a href="#">Learn more</a>
+                    </div> 
+                </div>
+                <div class='item-section2'>
+                    <div class='box-section2'>
+                        <img src="img/Campaigns.svg.png">
+                    </div>
+                    <div class="conteudo_itens_section2">
+                        <span class="badge_section2">CAMPAIGNS</span>
+                        <h3>Send awesome email marketing campaigns</h3>
+
+                        <p>Create and send customizable
+                            email campaigns with pro
+                            templates, built to get more clicks.
+                        </p>
+
+                        <a href="#">Learn more</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+     </section> 
+
+     <style>
+        .container_section2 {
+            width: 100%;
+            height: 708px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+
+        .white-box-section2 {
+            width: 1384px;
+            height: 548px;
+            background-color: bisque;
+            margin: 80px 28px;
+           
+        }
+
+        .items-section2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .item-section2 {
+            font-size: 1.5em; 
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .text-container_section2 h2 {
+            margin: 0 20px 40px 20px; 
+        }
+
+        .badge_section2 {
+            background-color: #FFCC00;
+            color: rgb(0, 0, 0);
+            padding: 4px 8px;
+            text-align: center;
+            border-radius: 99px;
+            font-weight: bold;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .conteudo_itens_section2 {
+            margin: 0 0 0 20px;
+            text-align: left;
+        }
+
+        .conteudo_itens_section2 h3, 
+        .conteudo_itens_section2 p, 
+        .conteudo_itens_section2 a {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .conteudo_itens_section2 a {
+            color: #0D68C5;
+            text-decoration: none;
+        }
+
+        @media (max-width:1384px) 
+        {
+            .items-section2 
+            {
+               
+                grid-template-columns: repeat(1, 0fr);
+                grid-gap: 10px;
+            }
+
+            
+            .white-box-section2 {
+             width: auto; 
+             height: auto;           
+            }
+        
+            .container_section2 {
+                height: auto;
+            }
+        }
+
+     </style>
 </body>
 </html>
