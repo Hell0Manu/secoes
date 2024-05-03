@@ -8,37 +8,36 @@
     <title>Sections</title>
 </head>
 <body>
-     
-    <section class="container">
-        <div class="white-box">
-            <div class="items">
-                <div class="text-container">
+    <section class='container_secoes'>
+        <div class='white-box'>
+            <div class='items'>
+                <div class='text-container_secoes'>
                     <h1>Investir em bem-estar nunca valeu tanto a pena</h1>
                     <p>Empresas mais saudáveis com resultados comprovados.</p>
                 </div>
-                <div class="item">
-                    <div class="box">
-                        <span class="mdi mdi-arm-flex-outline"></span>
+                <div class='item'>
+                    <div class='box'>
+                        <span class='mdi mdi-arm-flex-outline'></span>
                         <h3>178%</h3>
                         <p>de aumento em colaboradores ativos fisicamente <span>[1]</span></p>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="box">
-                        <span class="mdi mdi-thumb-up-outline"></span>
+                <div class='item'>
+                    <div class='box'>
+                        <span class='mdi mdi-thumb-up-outline'></span>
                         <h3>25%</h3>
                         <p>de redução nos custos anuais com plano de saúde <span>[2]</span></p>
                     </div>
                     
                 </div>
-                <div class="item">
-                    <div class="box">
-                        <span class="mdi mdi-heart-outline"></span>
+                <div class='item'>
+                    <div class='box'>
+                        <span class='mdi mdi-heart-outline'></span>
                         <h3>43%</h3>
                         <p>de melhoria na retenção de talentos <span>[3]</span></p>
                     </div>
                 </div>
-                <div class="button-container">
+                <div class='button-container_secoes'>
                     <button>Solicitar orçamento</button>
                 </div>
             </div>
@@ -46,12 +45,9 @@
     </section>
 
     <style>
-
-
         body {
             font-family: "Rubik", sans-serif;
         }
-
 
         .box span {
             font-weight: 900;
@@ -63,18 +59,17 @@
             font-size: 40px;
         }
 
-
-        .container {
+        .container_secoes {
             width: 100%;
             height: 615.98px;
-            display: flex;
+            display: grid;
             align-items: center;
             justify-content: center;
         }
 
         .items {
             display: grid;
-            grid-gap: 24px;
+            grid-gap: 48px 24px;
             grid-template-columns: repeat(3,1fr); 
         }
 
@@ -95,12 +90,12 @@
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         }
 
-        .button-container, .text-container{
+        .button-container_secoes, .text-container_secoes{
             grid-column: 1/-1;
             text-align: center;
         }
 
-        .button-container button  {
+        .button-container_secoes button  {
             border: none;
             color: white;
             font-size: 16px;
@@ -110,24 +105,43 @@
             background-color: #D8385E;
         }
 
-        .text-container h1, .box h3 {
+        .text-container_secoes h1, .box h3 {
             font-family: "Inter", sans-serif;
         }
 
-        .text-container h1 {
+        .text-container_secoes h1 {
             margin: 0;
             font-size: 48px;
         }
 
-        .text-container p {
+        .text-container_secoes p {
             color: #6B6B78;
             font-size: 20px;
             margin-top: 12px;
+            margin-bottom: 0;
         }
 
         .box p {
             font-size: 20px;
         }
+
+        @media (max-width:1272px) {
+
+            .white-box {
+             width: auto; 
+             height: auto;
+           
+            }
+            .items {
+                grid-template-columns: repeat(1,0fr); 
+            }
+
+            .container_secoes {
+                height: auto;
+                justify-content: center;
+                margin: 50px 0 50px 0;
+            }
+        }
     </style>
 </body>
-</html>/
+</html>
