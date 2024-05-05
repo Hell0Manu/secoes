@@ -9,37 +9,37 @@
 </head>
 <body>
     <!--Section 1 -->
-    <section class='container_secoes'>
-        <div class='white-box'>
-            <div class='items'>
-                <div class='text-container_secoes'>
+    <section class='section_one'>
+        <div class='container_one'>
+            <div class='items_one'>
+                <div class='titles_one'>
                     <h1>Investir em bem-estar nunca valeu tanto a pena</h1>
                     <p>Empresas mais saudáveis com resultados comprovados.</p>
                 </div>
-                <div class='item'>
-                    <div class='box'>
+                <div class='item_one'>
+                    <div class='box_one'>
                         <span class='mdi mdi-arm-flex-outline'></span>
-                        <h3>178%</h3>
-                        <p>de aumento em colaboradores ativos fisicamente <span>[1]</span></p>
+                        <span class="percentage_one">178%</span>
+                        <p>de aumento em colaboradores ativos fisicamente <span class="number">[1]</span></p>
                     </div>
                 </div>
-                <div class='item'>
-                    <div class='box'>
+                <div class='item_one'>
+                    <div class='box_one'>
                         <span class='mdi mdi-thumb-up-outline'></span>
-                        <h3>25%</h3>
-                        <p>de redução nos custos anuais com plano de saúde <span>[2]</span></p>
+                        <span class="percentage_one">25%</span>
+                        <p>de redução nos custos anuais com plano de saúde <span class="number">[2]</span></p>
                     </div>
                     
                 </div>
-                <div class='item'>
-                    <div class='box'>
+                <div class='item_one'>
+                    <div class='box_one'>
                         <span class='mdi mdi-heart-outline'></span>
-                        <h3>43%</h3>
-                        <p>de melhoria na retenção de talentos <span>[3]</span></p>
+                        <span class="percentage_one">43%</span>
+                        <p>de melhoria na retenção de talentos <span class="number">[3]</span></p>
                     </div>
                 </div>
-                <div class='button-container_secoes'>
-                    <a class="button-solicitar" href="#" aria-label="Solicitar orçamento" role="button" >
+                <div class='button_one'>
+                    <a class="link_button_one" href="#" aria-label="Solicitar orçamento" role="button" >
                         <button >Solicitar orçamento</button>
                     </a>
                    
@@ -49,35 +49,44 @@
     </section>
 
     <style>
-        body {
+        .section_one {
             font-family: "Rubik", sans-serif;
         }
 
-        .box span {
+        .percentage_one {
+            display: flex;
+            color: black;
+            font-weight: 900;
+            margin-top: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box_one .mdi, .number {
             font-weight: 900;
             color: #D8385E;
         }
         
-        .box .mdi{
+        .box_one .mdi{
             color: #D8385E;
             font-size: 40px;
         }
 
-        .container_secoes {
+        .section_one {
             width: 100%;
-            height: 615.98px;
             display: flex;
+            height: 615.98px;
             align-items: center;
             justify-content: center;
         }
 
-        .items {
+        .items_one {
             display: grid;
             grid-gap: 48px 24px;
             grid-template-columns: repeat(3,1fr); 
         }
 
-        .white-box {
+        .container_one {
             display: flex;
             width: 1272px;
             height: 455.98px;
@@ -85,7 +94,7 @@
             justify-content: space-around;
         }
 
-        .item { 
+        .item_one { 
             padding: 24px;
             width: 22.5rem;
             font-size: 1.5em; 
@@ -94,12 +103,12 @@
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         }
 
-        .button-container_secoes, .text-container_secoes{
+        .button_one, .titles_one{
             grid-column: 1/-1;
             text-align: center;
         }
 
-        .button-container_secoes button  {
+        .button_one button  {
             border: none;
             color: white;
             font-size: 16px;
@@ -109,42 +118,42 @@
             background-color: #D8385E;
         }
 
-        .text-container_secoes h1, .box h3 {
+        .titles_one h1, .box_one h3 {
             font-family: "Inter", sans-serif;
         }
 
-        .text-container_secoes h1 {
+        .titles_one h1 {
             margin: 0;
             font-size: 48px;
         }
 
-        .text-container_secoes p {
+        .titles_one p {
             color: #6B6B78;
             font-size: 20px;
             margin-top: 12px;
             margin-bottom: 0;
         }
 
-        .box p {
+        .box_one p {
             font-size: 20px;
         }
 
-        .button-solicitar button:hover {
+        .link_button_one button:hover {
             cursor: pointer;
         }
 
         @media (max-width:1272px) {
 
-            .white-box {
+            .container_one {
              width: auto; 
              height: auto;
            
             }
-            .items {
+            .items_one {
                 grid-template-columns: repeat(1,0fr); 
             }
 
-            .container_secoes {
+            .section_one {
                 height: auto;
                 justify-content: center;
                 margin: 50px 0 50px 0;
@@ -153,18 +162,18 @@
     </style>
 
      <!--Section 2 -->
-     <section class="container_section2">
-        <div class="white-box-section2">
-            <div class='text-container_section2'>
+     <section class="section_two">
+        <div class="container_two">
+            <div class='titles_two'>
                 <h2>Enrich your plan with more features</h2>
             </div>
-            <div class="items-section2">
-                <div class='item-section2'>
-                    <div class='box-section2'>
+            <div class="items_two">
+                <div class='item_two'>
+                    <div class='img_two'>
                         <img src="img/Leadbooster.svg.png" alt="">
                     </div>
-                    <div class="conteudo_itens_section2">
-                        <span class="badge_section2">LEADBOOSTER</span>
+                    <div class="content_two">
+                        <span class="title_content_two">LEADBOOSTER</span>
                         <h3>Capture more leads</h3>
 
                         <p>Get more leads with this powerful
@@ -174,12 +183,12 @@
                         <a href="#">Learn more</a>
                     </div> 
                 </div>
-                <div class='item-section2'>
-                    <div class='box-section2'>
+                <div class='item_two'>
+                    <div class='img_two'>
                         <img src="img/Web-visitors.svg.png" alt="">
                     </div>
-                    <div class="conteudo_itens_section2">
-                        <span class="badge_section2">WEB VISITORS</span>
+                    <div class="content_two">
+                        <span class="title_content_two">WEB VISITORS</span>
                         <h3>See who’s browsing your site</h3>
 
                         <p>Identify which organizations are
@@ -191,12 +200,12 @@
                         <a href="#">Learn more</a>
                     </div> 
                 </div>
-                <div class='item-section2'>
-                    <div class='box-section2'>
+                <div class='item_two'>
+                    <div class='img_two'>
                         <img src="img/Smartdocs.svg.png" alt="">
                     </div>
-                    <div class="conteudo_itens_section2">
-                        <span class="badge_section2">SMART DOCS</span>
+                    <div class="content_two">
+                        <span class="title_content_two">SMART DOCS</span>
                         <h3>Manage all your documents in one
                             place</h3>
 
@@ -209,12 +218,12 @@
                         <a href="#">Learn more</a>
                     </div> 
                 </div>
-                <div class='item-section2'>
-                    <div class='box-section2'>
+                <div class='item_two'>
+                    <div class='img_two'>
                         <img src="img/Campaigns.svg.png" alt="">
                     </div>
-                    <div class="conteudo_itens_section2">
-                        <span class="badge_section2">CAMPAIGNS</span>
+                    <div class="content_two">
+                        <span class="title_content_two">CAMPAIGNS</span>
                         <h3>Send awesome email marketing campaigns</h3>
 
                         <p>Create and send customizable
@@ -230,7 +239,7 @@
      </section> 
 
      <style>
-        .container_section2 {
+        .section_two {
             width: 100%;
             height: 708px;
             display: flex;
@@ -238,32 +247,31 @@
             justify-content: center;
         }
 
-        .white-box-section2 {
+        .container_two {
             width: 1384px;
             height: 548px;
             display: flex;
             margin: 80px 28px; 
-            align-items: center;
             flex-direction: column; 
         }
 
-        .items-section2 {
+        .items_two {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 10px;
         }
 
-        .item-section2 {
+        .item_two {
             font-size: 1.5em; 
             border-radius: 8px;
             text-align: center;
         }
 
-        .text-container_section2 h2 {
+        .titles_two h2 {
             margin: 0 20px  20px; 
         }
 
-        .badge_section2 {
+        .title_content_two {
             background-color: #FFCC00;
             color: rgb(0, 0, 0);
             padding: 4px 8px;
@@ -274,60 +282,60 @@
             font-style: italic;
         }
 
-        .conteudo_itens_section2 {
+        .content_two {
             margin: 0 0 0 20px;
             text-align: left;
         }
 
-        .conteudo_itens_section2 h3, 
-        .conteudo_itens_section2 p, 
-        .conteudo_itens_section2 a {
+        .content_two h3, 
+        .content_two p, 
+        .content_two a {
             font-size: 18px;
             font-style: italic;
         }
 
-        .conteudo_itens_section2 a {
+        .content_two a {
             color: #0D68C5;
-            text-decoration: none;
+           text-decoration: none;
         }
 
         @media (max-width:1384px) 
         {
-            .items-section2 
+            .items_two 
             {
                 grid-template-columns: repeat(1, 0fr);
                 grid-gap: 48px;
             }
             
-            .white-box-section2 {
+            .container_two {
              width: auto; 
              height: auto;           
             }
         
-            .container_section2 {
+            .section_two {
                 height: auto;
             }
 
-            .item-section2 {
+            .item_two {
             padding: 10px;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            }
         }
-        }
-
      </style>
 
      <!--Section 3 -->
-     <section class="container_section3">
-        <div class="white-box-section3">
-            <div class="text-container_section3">
+     <section class="section_three">
+        <div class="container_three">
+            <div class="titles_three">
                 <h1>O software de BPM que os times de alta performance amam</h1>
-                <div class="teste">
+                <div class="links_three">
                     <a href="#"><p>Leia todas as histórias de clientes </p><span class="mdi mdi-arrow-right"></span></a>
                 </div>
             </div>
-            <div class="items-section3">
-                <div class="item-section3">
-                    <p class="description-section3">Antes do Pipefy, eu estava perdido entre
+            <div class="items_three">
+            
+                <div class="item_three">
+                    <p class="contant_three">Antes do Pipefy, eu estava perdido entre
                         emails e outras ferramentas, tentando
                         estruturar o trabalho da minha equipe.
                         Agora eu tenho todos os meus fluxos de
@@ -338,19 +346,19 @@
                     </p>
                     <span class="mdi mdi-minus"></span>
 
-                    <div class="box-section3">
+                    <div class="img_three">
                         <img src="img/amp-icon.webp" alt="">
                     </div>
-                    <div class="text">
+                    <div class="subtitle_three">
                         <h3>Cristiano Machado</h3>
                         <p>CEO da Amplifique-me</p>
                     </div>
-                    <div class="teste">
+                    <div class="links_three">
                         <a href="#"><p>Usando os Workflows Customizados do Pipefy</p><span class="mdi mdi-arrow-right"></span></a>
                     </div>
                 </div>
-                <div class="item-section3">
-                    <p class="description-section3"> 
+                <div class="item_three">
+                    <p class="contant_three"> 
                         Os maiores benefícios do Pipefy foram
                         melhorar a comunicação, ganhar
                         velocidade no processo, e atingir
@@ -359,14 +367,15 @@
                         recrutamento está, e o time de RH não
                         precisa responder a várias pessoas o
                         tempo todo.</p>
-                        <div class="box-section3">
+                        <span class="mdi mdi-minus"></span>
+                        <div class="img_three">
                             <img src="img/james-logo.webp" alt="">
                         </div>
-                        <div class="text">
+                        <div class="subtitle_three">
                             <h3>Milene Almeida</h3>
                             <p>Business Partner da James Delivery</p>
                         </div>
-                        <div class="teste">
+                        <div class="links_three">
                             <a href="#"><p>Usando Pipefy para People Operations</p><span class="mdi mdi-arrow-right"></span></a>
                         </div>
                 </div>
@@ -376,90 +385,84 @@
      </section>
 
      <style>
-        .container_section3 {
+        .section_three {
             display: flex;
             justify-content: center;
             align-items: center;
-            /* background-color: #1414c3; */
         }
 
-        .white-box-section3 {
+        .container_three {
             display: flex;
             width: 1452px;
             height: 992px;
             margin: 75.5px 6px;
             align-items: center;
             flex-direction: column; 
-            /* background-color: #6B6B78; */
         }
 
-        .text-container_section3 {
+        .titles_three {
             height: 120px;
             display: grid;
             align-items: center;
-            /* background-color: #38d848; */
             grid-template-columns: 907.19px 388.31px;
         }
 
-        .text-container_section3 h1 {
+        .titles_three h1 {
             margin: 0;
             font-size: 40px;
         }
 
-        .teste, .teste a {
+        .links_three, .links_three a {
             display: flex;
             align-items: center;
         }
 
-        .teste a {
+        .links_three a {
             text-decoration: none;
+            color: #0B66FF;
         }
 
-        .teste span {
+        .links_three span {
             font-size: 18px;
             margin-left: 1.37px;
         }
 
-        .teste span, .teste p {
-            color: #0B66FF;
-            margin: 0;
-        }
-
-        .items-section3 {
+        .items_three {
             margin-top: 62px;
             display:grid;
             grid-gap: 24px; 
             grid-template-columns: repeat(2, 1fr);
         }
-        .item-section3 {
+        .item_three {
             display: flex;
             width: 395px;
             height: 467px;
             padding: 64px;
+            border-radius: 16px;
             align-items: center;
             flex-direction: column;
             background-color: #FAFAFB; 
         }
 
-        .description-section3  {
+        .contant_three  {
            font-size: 20px;
             text-align: center;
         }
 
-        .box-section3 {
+        .img_three {
             margin-bottom: 12px;
         }
 
-        .text p {
+        .subtitle_three p {
             margin: 0 0 12px 0;
             color: #7A7A7A;
         }
 
-        .text h3{
+        .subtitle_three h3{
             margin: 0;
         }
 
-        .item-section3 span {
+        .item_three span {
             margin: 15px 0 15px 0;
         }
 
