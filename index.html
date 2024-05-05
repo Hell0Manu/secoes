@@ -39,14 +39,16 @@
                     </div>
                 </div>
                 <div class='button-container_secoes'>
-                    <button>Solicitar orçamento</button>
+                    <a class="button-solicitar" href="#" aria-label="Solicitar orçamento" role="button" >
+                        <button >Solicitar orçamento</button>
+                    </a>
+                   
                 </div>
             </div>
         </div>
     </section>
 
     <style>
-        /*Section 1*/
         body {
             font-family: "Rubik", sans-serif;
         }
@@ -56,7 +58,7 @@
             color: #D8385E;
         }
         
-        .mdi{
+        .box .mdi{
             color: #D8385E;
             font-size: 40px;
         }
@@ -127,6 +129,10 @@
             font-size: 20px;
         }
 
+        .button-solicitar button:hover {
+            cursor: pointer;
+        }
+
         @media (max-width:1272px) {
 
             .white-box {
@@ -155,7 +161,7 @@
             <div class="items-section2">
                 <div class='item-section2'>
                     <div class='box-section2'>
-                        <img src="img/Leadbooster.svg.png">
+                        <img src="img/Leadbooster.svg.png" alt="">
                     </div>
                     <div class="conteudo_itens_section2">
                         <span class="badge_section2">LEADBOOSTER</span>
@@ -170,7 +176,7 @@
                 </div>
                 <div class='item-section2'>
                     <div class='box-section2'>
-                        <img src="img/Web-visitors.svg.png">
+                        <img src="img/Web-visitors.svg.png" alt="">
                     </div>
                     <div class="conteudo_itens_section2">
                         <span class="badge_section2">WEB VISITORS</span>
@@ -187,7 +193,7 @@
                 </div>
                 <div class='item-section2'>
                     <div class='box-section2'>
-                        <img src="img/Smartdocs.svg.png">
+                        <img src="img/Smartdocs.svg.png" alt="">
                     </div>
                     <div class="conteudo_itens_section2">
                         <span class="badge_section2">SMART DOCS</span>
@@ -205,7 +211,7 @@
                 </div>
                 <div class='item-section2'>
                     <div class='box-section2'>
-                        <img src="img/Campaigns.svg.png">
+                        <img src="img/Campaigns.svg.png" alt="">
                     </div>
                     <div class="conteudo_itens_section2">
                         <span class="badge_section2">CAMPAIGNS</span>
@@ -230,15 +236,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: aqua;
         }
 
         .white-box-section2 {
             width: 1384px;
             height: 548px;
-            background-color: bisque;
-            margin: 80px 28px;
-           
+            display: flex;
+            margin: 80px 28px; 
+            align-items: center;
+            flex-direction: column; 
         }
 
         .items-section2 {
@@ -254,7 +260,7 @@
         }
 
         .text-container_section2 h2 {
-            margin: 0 20px 40px 20px; 
+            margin: 0 20px  20px; 
         }
 
         .badge_section2 {
@@ -289,11 +295,9 @@
         {
             .items-section2 
             {
-               
                 grid-template-columns: repeat(1, 0fr);
-                grid-gap: 10px;
+                grid-gap: 48px;
             }
-
             
             .white-box-section2 {
              width: auto; 
@@ -303,6 +307,160 @@
             .container_section2 {
                 height: auto;
             }
+
+            .item-section2 {
+            padding: 10px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        }
+        }
+
+     </style>
+
+     <!--Section 3 -->
+     <section class="container_section3">
+        <div class="white-box-section3">
+            <div class="text-container_section3">
+                <h1>O software de BPM que os times de alta performance amam</h1>
+                <div class="teste">
+                    <a href="#"><p>Leia todas as histórias de clientes </p><span class="mdi mdi-arrow-right"></span></a>
+                </div>
+            </div>
+            <div class="items-section3">
+                <div class="item-section3">
+                    <p class="description-section3">Antes do Pipefy, eu estava perdido entre
+                        emails e outras ferramentas, tentando
+                        estruturar o trabalho da minha equipe.
+                        Agora eu tenho todos os meus fluxos de
+                        trabalho em um único lugar que é fácil de
+                        usar, com preço justo e que me dá a
+                        possibilidade de criar os processos do
+                        meu jeito.
+                    </p>
+                    <span class="mdi mdi-minus"></span>
+
+                    <div class="box-section3">
+                        <img src="img/amp-icon.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Cristiano Machado</h3>
+                        <p>CEO da Amplifique-me</p>
+                    </div>
+                    <div class="teste">
+                        <a href="#"><p>Usando os Workflows Customizados do Pipefy</p><span class="mdi mdi-arrow-right"></span></a>
+                    </div>
+                </div>
+                <div class="item-section3">
+                    <p class="description-section3"> 
+                        Os maiores benefícios do Pipefy foram
+                        melhorar a comunicação, ganhar
+                        velocidade no processo, e atingir
+                        resultados mais rapidamente. Todo
+                        mundo sabe em que etapa o
+                        recrutamento está, e o time de RH não
+                        precisa responder a várias pessoas o
+                        tempo todo.</p>
+                        <div class="box-section3">
+                            <img src="img/james-logo.webp" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Milene Almeida</h3>
+                            <p>Business Partner da James Delivery</p>
+                        </div>
+                        <div class="teste">
+                            <a href="#"><p>Usando Pipefy para People Operations</p><span class="mdi mdi-arrow-right"></span></a>
+                        </div>
+                </div>
+            </div>
+           
+        </div>
+     </section>
+
+     <style>
+        .container_section3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #1414c3; */
+        }
+
+        .white-box-section3 {
+            display: flex;
+            width: 1452px;
+            height: 992px;
+            margin: 75.5px 6px;
+            align-items: center;
+            flex-direction: column; 
+            /* background-color: #6B6B78; */
+        }
+
+        .text-container_section3 {
+            height: 120px;
+            display: grid;
+            align-items: center;
+            /* background-color: #38d848; */
+            grid-template-columns: 907.19px 388.31px;
+        }
+
+        .text-container_section3 h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .teste, .teste a {
+            display: flex;
+            align-items: center;
+        }
+
+        .teste a {
+            text-decoration: none;
+        }
+
+        .teste span {
+            font-size: 18px;
+            margin-left: 1.37px;
+        }
+
+        .teste span, .teste p {
+            color: #0B66FF;
+            margin: 0;
+        }
+
+        .items-section3 {
+            margin-top: 62px;
+            display:grid;
+            grid-gap: 24px; 
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .item-section3 {
+            display: flex;
+            width: 395px;
+            height: 467px;
+            padding: 64px;
+            align-items: center;
+            flex-direction: column;
+            background-color: #FAFAFB; 
+        }
+
+        .description-section3  {
+           font-size: 20px;
+            text-align: center;
+        }
+
+        .box-section3 {
+            margin-bottom: 12px;
+        }
+
+        .text p {
+            margin: 0 0 12px 0;
+            color: #7A7A7A;
+        }
+
+        .text h3{
+            margin: 0;
+        }
+
+        .item-section3 span {
+            margin: 15px 0 15px 0;
         }
 
      </style>
