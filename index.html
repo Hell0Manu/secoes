@@ -60,6 +60,7 @@
             margin-top: 15px;
             justify-content: center;
             align-items: center;
+            font-family: "inter", sans-serif;
         }
 
         .box_one .mdi, .number {
@@ -257,8 +258,10 @@
 
         .items_two {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
             grid-gap: 10px;
+            justify-content: center;
+            grid-template-columns: repeat(4, 1fr);
+
         }
 
         .item_two {
@@ -332,8 +335,8 @@
                     <a href="#"><p>Leia todas as histórias de clientes </p><span class="mdi mdi-arrow-right"></span></a>
                 </div>
             </div>
-            <div class="items_three">
-            
+            <div class="arrow-left"><span class="mdi mdi-arrow-left"></span></div>
+            <div class="items_three"> 
                 <div class="item_three">
                     <p class="contant_three">Antes do Pipefy, eu estava perdido entre
                         emails e outras ferramentas, tentando
@@ -366,22 +369,27 @@
                         mundo sabe em que etapa o
                         recrutamento está, e o time de RH não
                         precisa responder a várias pessoas o
-                        tempo todo.</p>
-                        <span class="mdi mdi-minus"></span>
-                        <div class="img_three">
-                            <img src="img/james-logo.webp" alt="">
-                        </div>
-                        <div class="subtitle_three">
-                            <h3>Milene Almeida</h3>
-                            <p>Business Partner da James Delivery</p>
-                        </div>
-                        <div class="links_three">
-                            <a href="#"><p>Usando Pipefy para People Operations</p><span class="mdi mdi-arrow-right"></span></a>
-                        </div>
+                        tempo todo.
+                    </p>
+                    <span class="mdi mdi-minus"></span>
+                    <div class="img_three">
+                        <img src="img/james-logo.webp" alt="">
+                    </div>
+                    <div class="subtitle_three">
+                        <h3>Milene Almeida</h3>
+                        <p>Business Partner da James Delivery</p>
+                    </div>
+                    <div class="links_three">
+                        <a href="#"><p>Usando Pipefy para People Operations</p><span class="mdi mdi-arrow-right"></span></a>
+                    </div>
                 </div>
+                <div class="item_three"></div>
+                <div class="item_three"></div>
+                <div class="item_three"></div>
             </div>
-           
+            <div class="arrow-right"><span class="mdi mdi-arrow-right"></span></div>
         </div>
+        
      </section>
 
      <style>
@@ -398,6 +406,7 @@
             margin: 75.5px 6px;
             align-items: center;
             flex-direction: column; 
+            position: relative; 
         }
 
         .titles_three {
@@ -429,15 +438,18 @@
 
         .items_three {
             margin-top: 62px;
-            display:grid;
+            display:flex;
             grid-gap: 24px; 
-            grid-template-columns: repeat(2, 1fr);
+            width: 75%;
+            overflow-x: auto;
         }
+
         .item_three {
             display: flex;
             width: 395px;
             height: 467px;
             padding: 64px;
+            flex-shrink: 0; 
             border-radius: 16px;
             align-items: center;
             flex-direction: column;
@@ -445,12 +457,20 @@
         }
 
         .contant_three  {
-           font-size: 20px;
+            width: 395px;
+            height: 240px;
+            font-size: 20px;
             text-align: center;
         }
 
         .img_three {
             margin-bottom: 12px;
+        }
+
+        .subtitle_three {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .subtitle_three p {
@@ -466,6 +486,36 @@
             margin: 15px 0 15px 0;
         }
 
+        .arrow-left span, .arrow-right span {
+            top: 50%; 
+            font-size: 48px;
+            position: absolute;
+            transform: translateY(-50%); 
+        }
+
+        .arrow-left span {
+            left: 0;
+        }
+
+        .arrow-right span {
+            right: 0;
+        }
+        
+        @media  (max-width:1452px) {
+
+            .titles_three {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns:repeat(1, 1fr);
+            }
+
+            .container_three {
+                width: 70%;
+                height: 992px;
+            }
+
+        }
      </style>
 </body>
 </html>
