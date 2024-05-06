@@ -8,48 +8,51 @@
     <title>Sections</title>
 </head>
 <body>
-    <section class='container_secoes'>
-        <div class='white-box'>
-            <div class='items'>
-                <div class='text-container_secoes'>
+    <!--Section 1 -->
+    <section class='section_one'>
+        <div class='container_one'>
+            <div class='items_one'>
+                <div class='titles_one'>
                     <h1>Investir em bem-estar nunca valeu tanto a pena</h1>
                     <p>Empresas mais saudáveis com resultados comprovados.</p>
                 </div>
-                <div class='item'>
-                    <div class='box'>
+                <div class='item_one'>
+                    <div class='box_one'>
                         <span class='mdi mdi-arm-flex-outline'></span>
-                        <h3>178%</h3>
-                        <p>de aumento em colaboradores ativos fisicamente <span>[1]</span></p>
+                        <span class="percentage_one">178%</span>
+                        <p>de aumento em colaboradores ativos fisicamente <span class="number">[1]</span></p>
                     </div>
                 </div>
-                <div class='item'>
-                    <div class='box'>
+                <div class='item_one'>
+                    <div class='box_one'>
                         <span class='mdi mdi-thumb-up-outline'></span>
-                        <h3>25%</h3>
-                        <p>de redução nos custos anuais com plano de saúde <span>[2]</span></p>
+                        <span class="percentage_one">25%</span>
+                        <p>de redução nos custos anuais com plano de saúde <span class="number">[2]</span></p>
                     </div>
                     
                 </div>
-                <div class='item'>
-                    <div class='box'>
+                <div class='item_one'>
+                    <div class='box_one'>
                         <span class='mdi mdi-heart-outline'></span>
-                        <h3>43%</h3>
-                        <p>de melhoria na retenção de talentos <span>[3]</span></p>
+                        <span class="percentage_one">43%</span>
+                        <p>de melhoria na retenção de talentos <span class="number">[3]</span></p>
                     </div>
                 </div>
-                <div class='button-container_secoes'>
-                    <button>Solicitar orçamento</button>
+                <div class='button_one'>
+                    <a class="link_button_one" href="#" aria-label="Solicitar orçamento" role="button" >
+                        <button >Solicitar orçamento</button>
+                    </a>
+                   
                 </div>
             </div>
         </div>
     </section>
 
     <style>
-        body {
+        .section_one, .section_two, .section_three {
             font-family: "Rubik", sans-serif;
         }
 
-        .box span {
         .percentage_one {
             display: flex;
             color: black;
@@ -65,26 +68,26 @@
             color: #D8385E;
         }
         
-        .mdi{
+        .box_one .mdi{
             color: #D8385E;
             font-size: 40px;
         }
 
-        .container_secoes {
+        .section_one {
             width: 100%;
+            display: flex;
             height: 615.98px;
-            display: grid;
             align-items: center;
             justify-content: center;
         }
 
-        .items {
+        .items_one {
             display: grid;
             grid-gap: 48px 24px;
             grid-template-columns: repeat(3,1fr); 
         }
 
-        .white-box {
+        .container_one {
             display: flex;
             width: 1272px;
             height: 455.98px;
@@ -92,7 +95,7 @@
             justify-content: space-around;
         }
 
-        .item { 
+        .item_one { 
             padding: 24px;
             width: 22.5rem;
             font-size: 1.5em; 
@@ -101,12 +104,12 @@
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         }
 
-        .button-container_secoes, .text-container_secoes{
+        .button_one, .titles_one{
             grid-column: 1/-1;
             text-align: center;
         }
 
-        .button-container_secoes button  {
+        .button_one button  {
             border: none;
             color: white;
             font-size: 16px;
@@ -116,44 +119,47 @@
             background-color: #D8385E;
         }
 
-        .text-container_secoes h1, .box h3 {
+        .titles_one h1, .box_one h3 {
             font-family: "Inter", sans-serif;
         }
 
-        .text-container_secoes h1 {
+        .titles_one h1 {
             margin: 0;
             font-size: 48px;
         }
 
-        .text-container_secoes p {
+        .titles_one p {
             color: #6B6B78;
             font-size: 20px;
             margin-top: 12px;
             margin-bottom: 0;
         }
 
-        .box p {
+        .box_one p {
             font-size: 20px;
+        }
+
+        .link_button_one button:hover {
+            cursor: pointer;
         }
 
         @media (max-width:1272px) {
 
-            .white-box {
+            .container_one {
              width: auto; 
              height: auto;
            
             }
-            .items {
+            .items_one {
                 grid-template-columns: repeat(1,0fr); 
             }
 
-            .container_secoes {
+            .section_one {
                 height: auto;
                 justify-content: center;
                 margin: 50px 0 50px 0;
             }
         }
-    </style>
     </style>
 
      <!--Section 2 -->
