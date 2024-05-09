@@ -503,10 +503,11 @@
             display: flex;
             width: 1452px;
             height: 992px;
-            margin: 75.5px 6px;
+            margin: 75.5px 78px;
             align-items: center;
             flex-direction: column;
             position: relative;
+            
         }
 
         .titles_three {
@@ -539,13 +540,12 @@
 
         .items_three {
             padding: 0;
-            width: 75%;
             display: flex;
+            width: 1090px;
             grid-gap: 24px;
-            margin-top: 62px;
             overflow-x: scroll;
             scroll-behavior: smooth;
-            -ms-overflow-style: none;
+            -ms-overflow-style: none; 
         }
 
         /* .items_three::-webkit-scrollbar {
@@ -553,21 +553,23 @@
         } */
 
         .item_three {
+            width: 100%;
             display: flex;
-            width: 395px;
-            height: 467px;
+            height: auto;
             padding: 64px;
             flex-shrink: 0;
+            max-width: 395px;
             border-radius: 16px;
             align-items: center;
             flex-direction: column;
             scroll-snap-align: start;
             background-color: #FAFAFB;
+            
         }
 
 
         .contant_three {
-            width: 395px;
+            width: 100%;
             height: 240px;
             font-size: 20px;
             text-align: center;
@@ -600,17 +602,17 @@
         .arrow_right span {
             color: #6D7C87;
             font-size: 48px;
-            cursor: pointer;
-            transform: translateY(-50%);
+            cursor: pointer; 
         }
 
         .arrow_left,
         .arrow_right {
-            top: 50%;
+            bottom: 45%;
             outline: 0;
             display: none;
             cursor: pointer;
             position: absolute;
+            align-items: center;
         }
 
         .arrow_left {
@@ -648,18 +650,29 @@
                 align-items: center;
                 justify-content: center;
                 grid-template-columns: repeat(1, 1fr);
-
             }
 
-
-            .container_three {
-                width: 100%;
-                height: 992px;
+          
+            .items_three {
+                width: 300px;
+                box-sizing: border-box;
             }
 
-            .contant_three {
-                width: 100%;
+            .item_three {
+                width: 300px;
+                box-sizing: border-box;
+                padding: 40px;
             }
+
+            .arrow_left,
+            .arrow_right {
+             bottom: 35%;
+            }
+            
+
+           .container_three p{
+            font-size: 18px;
+           }
 
             .links_mobile_carousel {
                 display: block;
@@ -669,83 +682,20 @@
                 display: none;
             }
 
-            .section_three {
+            /* .section_three {
+                height: auto;
+            } */
+
+            .arrow_left span,
+            .arrow_right span {
+            color: #6D7C87;
+            font-size: 30px;
+            cursor: pointer; 
+        }
+
+            .container_three {
                 height: auto;
             }
-
-            .item_three {
-                display: flex;
-                width: 100%;
-                /* Alterado para ocupar 100% do espaço disponível */
-                max-width: 500px;
-                /* Definindo uma largura máxima */
-                height: auto;
-                /* Altura ajustada automaticamente conforme o conteúdo */
-                padding: 20px;
-                /* Reduzido o padding para evitar que o conteúdo ultrapasse */
-                box-sizing: border-box;
-                /* Incluído para garantir que o padding seja considerado no cálculo da largura */
-                flex-shrink: 0;
-                border-radius: 16px;
-                align-items: center;
-                flex-direction: column;
-                scroll-snap-align: start;
-                background-color: #FAFAFB;
-            }
-
-            .contant_three {
-                /* Alterado para ocupar 100% da largura do .item_three */
-                max-width: 100%;
-                /* Definindo uma largura máxima igual à largura do .item_three */
-                height: auto;
-                /* Altura ajustada automaticamente conforme o conteúdo */
-                font-size: 16px;
-                /* Reduzido o tamanho da fonte para se adequar melhor a telas menores */
-                text-align: center;
-            }
-
-            .img_three img {
-                max-width: 100%;
-                /* Imagem responsiva para se ajustar à largura do contêiner */
-                height: auto;
-                /* Altura ajustada automaticamente para manter a proporção */
-            }
-
-            .subtitle_three {
-                width: 100%;
-                /* Alterado para ocupar 100% da largura do .item_three */
-                max-width: 100%;
-                /* Definindo uma largura máxima igual à largura do .item_three */
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-            }
-
-            .links_three {
-                width: 100%;
-                /* Alterado para ocupar 100% da largura do .item_three */
-                max-width: 100%;
-                /* Definindo uma largura máxima igual à largura do .item_three */
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
-                /* Reduzido o espaço superior */
-            }
-
-            .links_three a {
-                text-decoration: none;
-                color: #0B66FF;
-                display: flex;
-                align-items: center;
-            }
-
-            .links_three span {
-                margin-left: 5px;
-                /* Aumentado o espaçamento entre o texto e o ícone */
-            }
-
-
         }
     </style>
 </body>
