@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Sections</title>
+
+    <style>
+        /* Estilos para a seção dos slides */
+        .section_two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items_three {
+            padding: 0;
+            display: flex;
+            max-width: 560px;
+            width: 100%;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+        }
+
+        .items_three::-webkit-scrollbar {
+            display: none;
+        }
+
+        .item_three {
+            width: 100%;
+            display: flex;
+            height: auto;
+            flex-shrink: 0;
+            max-width: 560px;
+            border-radius: 16px;
+            align-items: center;
+            flex-direction: column;
+            scroll-snap-align: start; 
+            position: relative; 
+        }
+
+        .item_three img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px; 
+        }
+
+        .arrow_left span,
+        .arrow_right span {
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer; 
+    
+        }
+
+        .links_desktop_carousel a {
+            font-size: 0;
+        }
+
+        .arrow_left,
+        .arrow_right {
+            position: absolute;
+            top: 50%; 
+            transform: translateY(-50%);
+            color: #42322a;
+            font-size: 48px;
+            cursor: pointer;
+            z-index: 1; 
+            padding: 10px;
+            border-radius: 50%;
+       
+        }
+
+        .arrow_left {
+            margin-left: 10px;
+            left: 20px;
+        }
+
+        .arrow_right {
+            margin-right: 10px;
+            right: 20px;
+        }
+
+        .links_mobile_carousel {
+            display: none;
+        }
+
+        .links_desktop_carousel {
+            display: flex;
+        }
+
+        .item_three:hover .arrow_left,
+        .item_three:hover .arrow_right,
+        .item_three:focus .arrow_left,
+        .item_three:focus .arrow_right {
+            opacity: 1; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Section 3 -->
+    <section class="section_two">
+        <ol class="items_three">
+            <li id="slide1" tabindex="0" class="item_three">
+                <figure class="swiper-slide-inner">
+                    <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2023/12/IMG_1640-scaled.jpg?fit=1000%2C1000&amp;ssl=1" alt="IMG_1640" />
+                </figure>
+                <div class="links_desktop_carousel">
+                    <a href="#slide3" class="arrow_left">
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                    <a href="#slide2" class="arrow_right">
+                        Ir para o próximo slide
+                        <div> <span class="mdi mdi-chevron-right"></span>></div>
+                    </a>
+                </div>
+                <div class="links_mobile_carousel">
+                    <a href="#slide3" class="arrow_left " >
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                    <a href="#slide2" class="arrow_right">
+                        Ir para o próximo slide
+                        <div> <span class="mdi mdi-chevron-right"></span>></div>
+                    </a>
+                </div>
+            </li>
+            <li id="slide2" tabindex="0" class="item_three">
+                <figure class="swiper-slide-inner">
+                    <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2023/12/IMG_5085-min-scaled.jpg?fit=1000%2C1000&amp;ssl=1" alt="IMG_5085-min" />
+                </figure>
+                <div class="links_desktop_carousel">
+                    <a href="#slide1" class="arrow_left">
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                    <a href="#slide3" class="arrow_right">
+                        Ir para o próximo slide
+                        <div> <span class="mdi mdi-chevron-right"></span>></div>
+                    </a>
+                </div>
+                <div class="links_mobile_carousel">
+                    <a href="#slide1" class="arrow_left">
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                    <a href="#slide3" class="arrow_right">
+                        Ir para o próximo slide
+                        <div> <span class="mdi mdi-chevron-right"></span>></div>
+                    </a>
+                </div>
+            </li>
+            <li id="slide3" tabindex="0" class="item_three">
+                <figure>
+                    <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2023/12/IMG_1652-min-scaled.jpg?fit=1000%2C1000&amp;ssl=1" alt="IMG_1652-min" />
+                </figure>
+                <div class="links_desktop_carousel">
+                    <a href="#slide2" class="arrow_left">
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                    <a href="#slide1" class="arrow_right">
+                        Ir para o próximo slide
+                        <div> <span class="mdi mdi-chevron-right"></span>></div>
+                    </a>
+                </div>
+                <div class="links_mobile_carousel">
+                    <a href="#slide2" class="arrow_left">
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                    <a href="#slide1" class="arrow_right">
+                        Ir para o próximo slide
+                        <div> <span class="mdi mdi-chevron-right"></span>></div>
+                    </a>
+                </div>
+            </li>
+        </ol>
+    </section>
+</body>
+
+</html>

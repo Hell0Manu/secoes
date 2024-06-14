@@ -7,545 +7,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Sections</title>
-</head>
-
-<body>
-  <!--Section 1 -->
-  <section class='section_one'>
-    <div class='container_one'>
-        <div class='items_one'>
-            <div class='titles_one'>
-                <h1>Investir em bem-estar nunca valeu tanto a pena</h1>
-                <p>Empresas mais saudáveis com resultados comprovados.</p>
-            </div>
-            <div class='item_one'>
-                <p>
-                    <span class='mdi mdi-arm-flex-outline'></span>
-                    <span class="percentage_one">178%</span>de aumento em colaboradores ativos fisicamente
-                    <span class="number">[1]</span>
-                </p>
-            </div>
-            <div class='item_one'>
-                <p>
-                    <span class='mdi mdi-thumb-up-outline'></span>
-                    <span class="percentage_one">25%</span>
-                    de redução nos custos anuais com plano de saúde
-                    <span class="number">[2]</span>
-                </p>
-            </div>
-            <div class='item_one'>
-                <p>
-                    <span class='mdi mdi-heart-outline'></span>
-                    <span class="percentage_one">43%</span>
-                    de melhoria na retenção de talentos <span class="number">[3]</span>
-                </p>
-            </div>
-            <div class='button_one'>
-                <a class="link_button_one" href="#" aria-label="Solicitar orçamento" role="button">
-                   Solicitar orçamento
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    .section_one,
-    .section_two,
-    .section_three {
-        font-family: "Rubik", sans-serif;
-    }
-
-    .percentage_one {
-        display: flex;
-        color: black;
-        font-weight: 900;
-        margin: 15px 0 15px 0;
-        justify-content: center;
-        align-items: center;
-        font-family: "inter", sans-serif;
-    }
-
-    .item_one .mdi,
-    .number {
-        font-weight: 900;
-        color: #D8385E;
-    }
-
-    .item_one .mdi {
-        color: #D8385E;
-        font-size: 40px;
-    }
-
-    .items_one {
-        display: grid;
-        grid-gap: 48px 24px;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .item_one {
-        padding: 24px;
-        width: 22.5rem;
-        font-size: 1.5em;
-        border-radius: 8px;
-        text-align: center;
-        box-sizing: border-box;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    }
-
-    .section_one {
-        width: 100%;
-        display: flex;
-        height: 615.98px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container_one {
-        display: flex;
-        width: 1272px;
-        height: 455.98px;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .button_one,
-    .titles_one {
-        grid-column: 1/-1;
-        text-align: center;
-    }
-
-    .button_one a {
-        border: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 15px 24px;
-        border-radius: 99px;
-        background-color: #D8385E;
-        text-decoration: none;
-    }
-
-    .titles_one h1,
-    .item_one h3 {
-        font-family: "Inter", sans-serif;
-    }
-
-    .titles_one h1 {
-        margin: 0;
-        font-size: 48px;
-    }
-
-    .titles_one p {
-        color: #6B6B78;
-        font-size: 20px;
-        margin-top: 12px;
-        margin-bottom: 0;
-    }
-
-    .item_one p {
-        font-size: 20px;
-    }
-
-    .link_button_one button:hover {
-        cursor: pointer;
-    }
-
-    @media (max-width:1272px) {
-
-        .container_one {
-            width: auto;
-            height: auto;
-
-        }
-
-        .items_one {
-            grid-template-columns: repeat(1, 0fr);
-        }
-
-        .section_one {
-            height: auto;
-            justify-content: center;
-            margin: 50px 0 50px 0;
-        }
-    }
-</style>
-
-
-    <!--Section 2 -->
-    <section class="section_two">
-        <div class="container_two">
-            <div class='titles_two'>
-                <h2>Enrich your plan with more features</h2>
-            </div>
-            <div class="items_two">
-                <div class='item_two'>
-                    <div class='img_two'>
-                        <img src="img/Leadbooster.webp" alt="Leadbooster">
-                    </div>
-                    <div class="content_two">
-                        <span class="title_content_two">LEADBOOSTER</span>
-                        <h3>Capture more leads</h3>
-
-                        <p>Get more leads with this powerful
-                            and easy-to-use lead generation
-                            tool set.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-                <div class='item_two'>
-                    <div class='img_two'>
-                        <img src="img/Web-visitors.webp" alt="Web-visitors">
-                    </div>
-                    <div class="content_two">
-                        <span class="title_content_two">WEB VISITORS</span>
-                        <h3>See who’s browsing your site</h3>
-
-                        <p>Identify which organizations are
-                            browsing your website, for how
-                            long, how they found you and what
-                            they engaged with.
-                        </p>
-
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-                <div class='item_two'>
-                    <div class='img_two'>
-                        <img src="img/Smartdocs.webp" alt="Smartdocs">
-                    </div>
-                    <div class="content_two">
-                        <span class="title_content_two">SMART DOCS</span>
-                        <h3>Manage all your documents in one
-                            place</h3>
-
-                        <p>Centralize the entire documentation
-                            process by sending trackable
-                            quotes, proposals and contracts
-                            from within Pipedrive.
-                        </p>
-
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-                <div class='item_two'>
-                    <div class='img_two'>
-                        <img src="img/Campaigns.webp" alt="campaigns">
-                    </div>
-                    <div class="content_two">
-                        <span class="title_content_two">CAMPAIGNS</span>
-                        <h3>Send awesome email marketing campaigns</h3>
-
-                        <p>Create and send customizable
-                            email campaigns with pro
-                            templates, built to get more clicks.
-                        </p>
-
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <style>
+        /* Estilos para a seção dos slides */
         .section_two {
-            width: 100%;
-            height: 708px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .container_two {
-            width: 1384px;
-            height: 548px;
-            display: flex;
-            margin: 80px 28px;
-            flex-direction: column;
-        }
-
-        .items_two {
-            display: grid;
-            grid-gap: 10px;
-            justify-content: center;
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        .item_two {
-            font-size: 1.5em;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .titles_two h2 {
-            margin: 0 20px 20px;
-        }
-
-        .title_content_two {
-            background-color: #FFCC00;
-            color: rgb(0, 0, 0);
-            padding: 4px 8px;
-            text-align: center;
-            border-radius: 99px;
-            font-weight: bold;
-            font-size: 14px;
-            font-style: italic;
-        }
-
-        .content_two {
-            margin: 0 0 0 20px;
-            text-align: left;
-        }
-
-        .content_two h3,
-        .content_two p,
-        .content_two a {
-            font-size: 18px;
-            font-style: italic;
-        }
-
-        .content_two a {
-            color: #0D68C5;
-            text-decoration: none;
-        }
-
-        @media (max-width:1384px) {
-            .items_two {
-                grid-template-columns: repeat(1, 0fr);
-                grid-gap: 48px;
-            }
-
-            .container_two {
-                width: auto;
-                height: auto;
-            }
-
-            .section_two {
-                height: auto;
-            }
-
-            .item_two {
-                padding: 10px;
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-            }
-        }
-    </style>
-
-       <!--Section 3 -->
-       <section class="section_three">
-        <div class="container_three">
-            <div class="titles_three">
-                <h1>O software de BPM que os times de alta performance amam</h1>
-                <div class="links_three">
-                    <a href="#">
-                        <p>Leia todas as histórias de clientes </p><span class="mdi mdi-arrow-right"></span>
-                    </a>
-                </div>
-            </div>
-
-            <ol class="items_three">
-                <li id="slide1" tabindex="0" class="item_three">
-                    <p class="contant_three">Antes do Pipefy, eu estava perdido entre
-                        emails e outras ferramentas, tentando
-                        estruturar o trabalho da minha equipe.
-                        Agora eu tenho todos os meus fluxos de
-                        trabalho em um único lugar que é fácil de
-                        usar, com preço justo e que me dá a
-                        possibilidade de criar os processos do
-                        meu jeito.
-                    </p>
-                    
-                    <span class="mdi mdi-minus"></span>
-
-                    <div class="img_three">
-                        <img src="img/amp-icon.webp" alt="Logotipo da empresa Amplifique-me">
-                    </div>
-
-                    <div class="subtitle_three">
-                        <h2>Cristiano Machado</h2>
-                        <h3>CEO da Amplifique-me</h3>
-                    </div>
-                    
-                    <div class="links_three">
-                        <a href="#">
-                            Usando os Workflows Customizados do Pipefy <span class="mdi mdi-arrow-right"></span>
-                        </a>
-                    </div>
-
-                    <div class="links_desktop_carousel">
-                        <a href="#slide4" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide4" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-
-                    <div class="links_mobile_carousel">
-                        <a href="#slide4" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide2" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-                </li>
-
-                <li id="slide2" tabindex="0" class="item_three">
-                    <p class="contant_three">
-                        Os maiores benefícios do Pipefy foram
-                        melhorar a comunicação, ganhar
-                        velocidade no processo, e atingir
-                        resultados mais rapidamente. Todo
-                        mundo sabe em que etapa o
-                        recrutamento está, e o time de RH não
-                        precisa responder a várias pessoas o
-                        tempo todo.
-                    </p>
-                    <span class="mdi mdi-minus"></span>
-                    <div class="img_three">
-                        <img src="img/james-logo.webp" alt="Logotipo da empresa James">
-                    </div>
-                    <div class="subtitle_three">
-                        <h2>Milene Almeida</h2>
-                        <h3>Business Partner da James Delivery</h3>
-                    </div>
-                    <div class="links_three">
-                        <a href="#">
-                           Usando Pipefy para People Operations<span class="mdi mdi-arrow-right"></span>
-                        </a>
-                    </div>
-
-                    <div class="links_desktop_carousel">
-                        <a href="#slide1" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide4" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-                    <div class="links_mobile_carousel">
-                        <a href="#slide1" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide3" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-                </li>
-
-                <!-- cards de teste -->
-                <li id="slide3" tabindex="0" class="item_three">
-                    <div class="links_desktop_carousel">
-                        <a href="#slide4" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide1" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-                    <div class="links_mobile_carousel">
-                        <a href="#slide2" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide4" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-                </li>
-
-                <li id="slide4" tabindex="0" class="item_three">
-                    <div class="links_desktop_carousel">
-                        <a href="#slide1" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide1" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-                    <div class="links_mobile_carousel">
-                        <a href="#slide3" class="arrow_left">
-                            Ir para o slide anterior
-                            <div class="arrow_left"><span class="mdi mdi-arrow-left"></span></div>
-                        </a>
-                        <a href="#slide1" class="arrow_right">
-                            Ir para o proximo slide
-                            <div class="arrow_right"><span class="mdi mdi-arrow-right"></span></div>
-                        </a>
-                    </div>
-                </li>
-            </ol>
-    </section>
-
-    <style>
-        .section_three {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .container_three {
-            display: flex;
-            width: 1452px;
-            height: 992px;
-            margin: 75.5px 78px;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .titles_three {
-            height: 120px;
-            display: grid;
-            align-items: center;
-            grid-template-columns: 907.19px 388.31px;
-        }
-
-        .titles_three h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-
-        .links_three,
-        .links_three a {
-            display: flex;
-            align-items: center;
-        }
-
-        .links_three a {
-            text-decoration: none;
-            color: #0B66FF;
-        }
-
-        .links_three span {
-            font-size: 18px;
-            margin-left: 1.37px;
         }
 
         .items_three {
             padding: 0;
             display: flex;
-            width: 1090px;
-            grid-gap: 24px;
+            max-width: 560px;
+            width: 100%;
             overflow-x: scroll;
             scroll-behavior: smooth;
-            -ms-overflow-style: none; 
         }
 
         .items_three::-webkit-scrollbar {
@@ -553,87 +30,57 @@
         }
 
         .item_three {
-            width: 100%;
-            display: flex;
-            height: auto;
-            padding: 64px;
-            flex-shrink: 0;
-            max-width: 395px;
+            flex: 0 0 33.33%; /* Mostrar 3 slides por linha em desktop */
+            max-width: 33.33%; /* Limitar a largura máxima dos slides */
+            max-width: 1115px;
             border-radius: 16px;
             align-items: center;
             flex-direction: column;
-            scroll-snap-align: start;
-            background-color: #FAFAFB;
+            scroll-snap-align: start; 
+            position: relative; 
         }
 
-        .contant_three {
+        .item_three img {
             width: 100%;
-            height: 240px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .img_three {
-            margin-bottom: 12px;
-        }
-
-        .subtitle_three {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .subtitle_three h3 {
-            color: #575757;
-            margin: 0 0 12px 0;
-            font-weight: 200;
-        }
-
-        .subtitle_three h2 {
-            font-size: 18px;
-            margin: 0;
-        }
-
-        .item_three span {
-            margin: 15px 0 15px 0;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px; 
         }
 
         .arrow_left span,
         .arrow_right span {
-            color: #6D7C87;
-            font-size: 48px;
+            color: black;
+            font-size: 1.5rem;
             cursor: pointer; 
     
         }
 
+        .links_desktop_carousel a, .links_desktop_three_carousel a{
+            font-size: 0;
+        }
+
         .arrow_left,
         .arrow_right {
-            bottom: 45%;
-            outline: 0;
-            display: none;
-            cursor: pointer;
             position: absolute;
-            align-items: center;
-            font-size: 0;
-
+            top: 50%; 
+            transform: translateY(-50%);
+            color: #42322a;
+            font-size: 48px;
+            cursor: pointer;
+            z-index: 1; 
+            padding: 10px;
+            border-radius: 50%;
+       
         }
 
         .arrow_left {
-            left: 0;
+            margin-left: 10px;
+            left: 20px;
         }
 
         .arrow_right {
-            right: 0;
-        }
-
-        .item_three:first-child .arrow_left,
-        .item_three:first-child .arrow_right {
-            display: block;
-        }
-
-        .item_three:focus-within .arrow_left,
-        .item_three:focus-within .arrow_right {
-            display: block;
+            margin-right: 10px;
+            right: 20px;
         }
 
         .links_mobile_carousel {
@@ -641,59 +88,180 @@
         }
 
         .links_desktop_carousel {
-            display: block;
+            display: none; /*mudar para flex*/
         }
 
-        @media (max-width:1452px) {
+        .item_three:hover .arrow_left,
+        .item_three:hover .arrow_right,
+        .item_three:focus .arrow_left,
+        .item_three:focus .arrow_right {
+            opacity: 1; 
+        }
 
-            .titles_three {
-                width: auto;
-                height: auto;
-                display: grid;
-                align-items: center;
-                justify-content: center;
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-          
-            .items_three {
-                width: 300px;
-                box-sizing: border-box;
-            }
-
+        @media (max-width: 768px) {
             .item_three {
-                width: 300px;
-                padding: 40px;
-                box-sizing: border-box;
+                flex: 0 0 100%; /* Mostrar apenas 1 slide por linha em mobile */
+                max-width: 100%; /* Largura total do container */
+            }
+
+            .links_desktop_carousel {
+                display: none; /* Ocultar navegação desktop em mobile */
+            }
+
+            .links_mobile_carousel {
+                display: flex; /* Mostrar navegação mobile */
+                justify-content: space-between;
+                margin-top: 10px;
             }
 
             .arrow_left,
             .arrow_right {
-             bottom: 35%;
-            }
-            
-           .container_three p{
-            font-size: 18px;
-           }
-
-            .links_mobile_carousel {
-                display: block;
-            }
-
-            .links_desktop_carousel {
-                display: none;
-            }
-
-            .arrow_left span,
-            .arrow_right span {
-              font-size: 30px;
-            }
-
-            .container_three {
-                height: auto;
+                display: block; /* Mostrar os controles de navegação em mobile */
+                font-size: 0; /* Reduzir tamanho dos ícones para mobile */
             }
         }
+
     </style>
+</head>
+
+<body>
+    <!--Section 3 -->
+    <section class="section_two">
+        <ol class="items_three">
+            <li>
+                
+                <div  class="links_desktop_three_carousel">
+                    <a href="slide6" class="arrow_left">
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                </div>
+
+                <li id="slide1" tabindex="0" class="item_three">
+                    <figure class="swiper-slide-inner">
+                        <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2024/01/07-terra-1.png?fit=600%2C600&ssl=1" alt="IMG_1640" />
+                    </figure>
+                    
+                    
+                        <div class="links_mobile_carousel">
+                            <a href="#slide3" class="arrow_left">
+                                Ir para o slide anterior
+                                <div> <span class="mdi mdi-chevron-left"></span></div>
+                            </a>
+                            <a href="#slide2" class="arrow_right">
+                                Ir para o próximo slide
+                                <div> <span class="mdi mdi-chevron-right"></span></div>
+                            </a>
+                        </div>
+                </li>
+                
+                <li id="slide2" tabindex="0" class="item_three">
+                    <figure class="swiper-slide-inner">
+                        <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2024/01/02-sv-1.png?fit=600%2C600&ssl=1" alt="IMG_5085-min" />
+                    </figure>
+                 
+                    <div class="links_mobile_carousel">
+                        <a href="#slide1" class="arrow_left">
+                            Ir para o slide anterior
+                            <div> <span class="mdi mdi-chevron-left"></span></div>
+                        </a>
+                        <a href="#slide3" class="arrow_right">
+                            Ir para o próximo slide
+                            <div> <span class="mdi mdi-chevron-right"></span>></div>
+                        </a>
+                    </div>
+                </li>
+                <li id="slide3" tabindex="0" class="item_three">
+                    <figure>
+                        <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2024/01/03-uol-1.png?fit=600%2C600&ssl=1" alt="IMG_1652-min" />
+                    </figure>
+               
+                    <div class="links_mobile_carousel">
+                        <a href="#slide2" class="arrow_left">
+                            Ir para o slide anterior
+                            <div> <span class="mdi mdi-chevron-left"></span></div>
+                        </a>
+                        <a href="#slide1" class="arrow_right">
+                            Ir para o próximo slide
+                            <div> <span class="mdi mdi-chevron-right"></span>></div>
+                        </a>
+                    </div>
+                </li>
+                <div class="links_desktop_three_carousel">
+                    <a href="#slide1" class="arrow_right">
+                    Ir para o próximo slide
+                    <div> <span class="mdi mdi-chevron-right"></span>></div>
+                     </a>
+                </div>
+            </li>
+            <li>
+
+                <div  class="links_desktop_three_carousel">
+                    <a href="#slide1" class="arrow_left">
+                        Ir para o slide anterior
+                        <div> <span class="mdi mdi-chevron-left"></span></div>
+                    </a>
+                </div>
+
+                <li id="slide4" tabindex="0" class="item_three">
+                    <figure>
+                        <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2024/01/04-abf-1.png?fit=600%2C600&ssl=1" alt="IMG_1652-min" />
+                    </figure>
+                
+                    <div class="links_mobile_carousel">
+                        <a href="#slide2" class="arrow_left">
+                            Ir para o slide anterior
+                            <div> <span class="mdi mdi-chevron-left"></span></div>
+                        </a>
+                        <a href="#slide1" class="arrow_right">
+                            Ir para o próximo slide
+                            <div> <span class="mdi mdi-chevron-right"></span>></div>
+                        </a>
+                    </div>
+                </li>
+
+                <li id="slide5" tabindex="0" class="item_three">
+                    <figure>
+                        <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2024/01/05-gazz-conecta-1.png?fit=600%2C600&ssl=1" alt="IMG_1652-min" />
+                    </figure>
+                 
+                    <div class="links_mobile_carousel">
+                        <a href="#slide2" class="arrow_left">
+                            Ir para o slide anterior
+                            <div> <span class="mdi mdi-chevron-left"></span></div>
+                        </a>
+                        <a href="#slide4" class="arrow_right">
+                            Ir para o próximo slide
+                            <div> <span class="mdi mdi-chevron-right"></span>></div>
+                        </a>
+                    </div>
+                </li>
+
+                <li id="slide6" tabindex="0" class="item_three">
+                    <figure>
+                        <img src="https://i0.wp.com/market4u.com.br/wp-content/uploads/2024/01/06-gazeta-1.png?fit=600%2C600&ssl=1" alt="IMG_1652-min" />
+                    </figure>
+                    
+                    <div class="links_mobile_carousel">
+                        <a href="#slide2" class="arrow_left">
+                            Ir para o slide anterior
+                            <div> <span class="mdi mdi-chevron-left"></span></div>
+                        </a>
+                        <a href="#slide1" class="arrow_right">
+                            Ir para o próximo slide
+                            <div> <span class="mdi mdi-chevron-right"></span>></div>
+                        </a>
+                    </div>
+                </li>
+                <div class="links_desktop_three_carousel">
+                    <a href="#slide1" class="arrow_right">
+                    Ir para o próximo slide
+                    <div> <span class="mdi mdi-chevron-right"></span>></div>
+                     </a>
+                </div>
+            </li>
+        </ol>
+    </section>
 </body>
 
 </html>
